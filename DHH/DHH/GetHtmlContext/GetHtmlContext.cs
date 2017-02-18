@@ -1,15 +1,17 @@
-﻿namespace DHH.GetHtmlContext
+﻿using System;
+
+namespace DHH.GetHtmlContext
 {
     public static class GetHtmlContext
     {
-        public static string GetCotext(string body, string indexOf, int lenght, char word, string splitIndex)
+        public static string[] GetCotext(string body, string indexOf, char word)
         {
             int index = body.IndexOf(indexOf);
-            string tempBody = body.Substring(index, index + lenght);
+            string tempBody = body.Substring(index);
 
             string[] split = tempBody.Split(word);
 
-            return split[1].Substring(0, split[1].IndexOf(splitIndex));
+            return split;
         }
     }
 }
