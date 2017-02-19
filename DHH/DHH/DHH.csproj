@@ -43,6 +43,7 @@
     <Compile Include="GetHtmlContext\GetHtmlContext.cs" />
     <Compile Include="HttpRequest\HttpRequest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Regex\Regex.cs" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="WinHttp">
